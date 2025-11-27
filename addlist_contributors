@@ -1,0 +1,6 @@
+list contributors.sh
+repo=ibbu18/LearningATB7xJAVAPrograms
+curl-s "https://api.github.com/repo/$REPO/contributors"/jq-r.login
+echo "Pull Request:"
+curl-s "https://api.github.com/repos/$REPO/pull"|jq-r.title
+echo
